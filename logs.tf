@@ -1,6 +1,6 @@
 # Set up cloudwatch group and log stream and retain logs for 30 days
 resource "aws_cloudwatch_log_group" "accelerator_log_group" {
-  name              = "/ecs/{var.env}-app"
+  name              = "/ecs/accelerator-${var.env}-app"
   retention_in_days = 30
 
   tags {
