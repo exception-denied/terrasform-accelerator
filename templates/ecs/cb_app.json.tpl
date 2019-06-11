@@ -8,7 +8,7 @@
     "logConfiguration": {
         "logDriver": "awslogs",
         "options": {
-          "awslogs-group": "accelerator-${var.env}-log-group",
+          "awslogs-group": "accelerator-log-group",
           "awslogs-region": "${aws_region}",
           "awslogs-stream-prefix": "ecs"
         }
