@@ -8,7 +8,7 @@
     "logConfiguration": {
         "logDriver": "awslogs",
         "options": {
-          "awslogs-group": "/ecs/cb-app",
+          "awslogs-group": "accelerator-${var.env}-log-group",
           "awslogs-region": "${aws_region}",
           "awslogs-stream-prefix": "ecs"
         }

@@ -4,7 +4,7 @@ resource "aws_cloudwatch_log_group" "accelerator_log_group" {
   retention_in_days = 30
 
   tags {
-    Name = "{var.env}-log-group"
+    Name = "accelerator-${var.env}-log-group"
   }
 }
 
